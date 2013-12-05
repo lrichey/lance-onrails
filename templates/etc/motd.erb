@@ -1,0 +1,6 @@
+# All of the variables visible in the current scope are available as Ruby instance variables
+<%= @message %>, <%= @receiver %>
+
+# You can access variables in other scopes with the scope.lookupvar method.
+# This is particularly usefull to access FACTS information, like so:
+Your IP address is <%= scope.lookupvar('::ipaddress') %>
